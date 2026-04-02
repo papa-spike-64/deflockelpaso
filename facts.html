@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facts &amp; Evidence — DeFlock El Paso</title>
+  <meta name="description" content="Sourced, verified facts about Flock Safety's security record, contract practices, and what they mean for El Paso. Every claim is independently verifiable.">
+  <link rel="canonical" href="https://deflockelpaso.org/facts.html">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .facts-intro { max-width: 700px; margin-bottom: 3rem; }
+    .source-note {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--gray);
+      letter-spacing: 0.04em;
+      margin-top: 0.5rem;
+    }
+    .source-note a { color: var(--gray); text-decoration: underline; }
+    .source-note a:hover { color: var(--amber); }
+    .fact-section { margin-bottom: 4rem; }
+    .fact-section h2 { margin-bottom: 0.5rem; }
+    .fact-section .lead {
+      font-size: 1rem;
+      color: rgba(244,241,235,0.7);
+      margin-bottom: 2rem;
+      max-width: 680px;
+    }
+    .fact-cards { display: flex; flex-direction: column; gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+    .fact-card { background: var(--navy2); padding: 1.8rem 2rem; }
+    .fact-card h3 { font-size: 1.05rem; margin-bottom: 0.5rem; }
+    .fact-card p { font-size: 0.93rem; color: rgba(244,241,235,0.75); margin: 0 0 0.5rem; line-height: 1.65; }
+    .fact-card p:last-of-type { margin-bottom: 0; }
+    .fact-tag {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.2rem 0.5rem;
+      border-radius: 2px;
+      margin-bottom: 0.7rem;
+    }
+    .tag-security  { background: rgba(217,79,61,0.15);  color: #e07060; }
+    .tag-data      { background: rgba(245,166,35,0.12); color: var(--amber); }
+    .tag-legal     { background: rgba(100,149,237,0.12); color: #7ba8e8; }
+    .tag-contract  { background: rgba(100,200,130,0.1); color: #7ecf9a; }
+    .tag-local     { background: rgba(180,120,220,0.12); color: #c090e0; }
+    .open-records-box {
+      border: 1px solid var(--amber);
+      background: rgba(245,166,35,0.05);
+      border-radius: var(--radius);
+      padding: 1.8rem 2rem;
+      margin-bottom: 2rem;
+    }
+    .open-records-box h3 { margin-bottom: 0.6rem; color: var(--amber); font-size: 1.1rem; }
+    .open-records-box p { font-size: 0.93rem; color: rgba(244,241,235,0.78); margin: 0; line-height: 1.65; }
+    .verdict-table { width: 100%; border-collapse: collapse; margin-top: 1.5rem; font-size: 0.9rem; }
+    .verdict-table th {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--gray);
+      text-align: left;
+      padding: 0.6rem 1rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .verdict-table td {
+      padding: 0.9rem 1rem;
+      border-bottom: 1px solid rgba(138,154,176,0.1);
+      vertical-align: top;
+      color: rgba(244,241,235,0.8);
+    }
+    .verdict-table tr:last-child td { border-bottom: none; }
+    .verdict-table td:first-child { color: var(--white); font-weight: 600; width: 40%; }
+    .badge-disputed { color: var(--red); font-family: var(--font-mono); font-size: 0.75rem; }
+    .badge-confirmed { color: #7ecf9a; font-family: var(--font-mono); font-size: 0.75rem; }
+    .badge-pending { color: var(--amber); font-family: var(--font-mono); font-size: 0.75rem; }
+    .asks-list { list-style: none; margin: 1.5rem 0; display: flex; flex-direction: column; gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+    .asks-list li { background: var(--navy2); padding: 1.2rem 1.6rem; font-size: 0.93rem; color: rgba(244,241,235,0.8); display: flex; gap: 1rem; align-items: flex-start; }
+    .ask-num { font-family: var(--font-mono); font-size: 0.75rem; color: var(--amber); flex-shrink: 0; margin-top: 0.15rem; }
+    .sources-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+    .source-card { background: var(--navy2); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.2rem 1.4rem; }
+    .source-card .source-type { font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gray); margin-bottom: 0.4rem; }
+    .source-card p { font-size: 0.88rem; color: rgba(244,241,235,0.7); margin: 0.3rem 0 0.6rem; line-height: 1.5; }
+    .source-card a { font-family: var(--font-mono); font-size: 0.75rem; color: var(--amber); }
+  </style>
+</head>
+<body>
+
+<!-- Urgency Bar -->
+<div class="urgency-bar">
+  ⚠ The El Paso Flock Safety contract expires <strong>May 16, 2026</strong>. &nbsp;<a href="action.html">Take action →</a>
+</div>
+
+<!-- Navigation -->
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">DEFLOCK EL PASO</a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="this.classList.toggle('open'); document.getElementById('nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="problem.html">The Problem</a></li>
+      <li><a href="facts.html">Facts</a></li>
+      <li><a href="action.html">Take Action</a></li>
+      <li><a href="blog/index.html">News</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a class="nav-lang" href="es.html">ES</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Page Header -->
+<section style="padding: 4rem 0 2rem;">
+  <div class="container">
+    <div class="section-label">Facts &amp; Evidence</div>
+    <h1 style="max-width: 700px; margin-bottom: 1rem;">What El Paso deserves to know before May 16</h1>
+    <div class="facts-intro">
+      <p style="color: rgba(244,241,235,0.7); font-size: 1.05rem;">Every claim on this page is sourced from government audits, court filings, the federal cybersecurity database, vendor documents, or named investigative reporting. No anonymous sources. No speculation. Click any source link to verify for yourself.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Section 1: Security -->
+<section style="padding: 2rem 0;">
+  <div class="container">
+    <div class="fact-section">
+      <div class="section-label">01 — Security</div>
+      <h2>Flock's security record</h2>
+      <p class="lead">The National Vulnerability Database is the U.S. government's official registry of cybersecurity flaws. Here is what it says about Flock devices.</p>
+
+      <div class="fact-cards">
+        <div class="fact-card">
+          <div class="fact-tag tag-security">CVE Database</div>
+          <h3>22 confirmed security vulnerabilities in Flock devices</h3>
+          <p>The National Vulnerability Database (nvd.nist.gov) lists 22 confirmed CVEs — Common Vulnerabilities and Exposures — specifically affecting Flock Safety hardware. These are not allegations. They are formally registered security flaws in the U.S. government's official cybersecurity database.</p>
+          <div class="source-note">Source: <a href="https://nvd.nist.gov" target="_blank" rel="noopener">nvd.nist.gov</a> — search "Flock Safety"</div>
+        </div>
+        <div class="fact-card">
+          <div class="fact-tag tag-security">Physical Access</div>
+          <h3>Cameras can be hacked in 30 seconds via physical button sequence</h3>
+          <p>Security researchers demonstrated on video that Flock cameras can be accessed by anyone who can physically reach them using a simple button sequence. No special equipment required. Many Flock cameras are mounted on public poles at street level.</p>
+          <div class="source-note">Source: Documented in security research; cited in U.S. Senator Ron Wyden's investigation into Flock Safety</div>
+        </div>
+        <div class="fact-card">
+          <div class="fact-tag tag-security">Password Security</div>
+          <h3>No multi-factor authentication required — passwords were stolen</h3>
+          <p>Senator Ron Wyden's federal investigation found that Flock does not require multi-factor authentication for officer accounts. At least 35 customer account passwords were stolen by hackers. At one point, Flock cameras and admin dashboards could be accessed publicly without any login.</p>
+          <div class="source-note">Source: U.S. Senator Ron Wyden investigation, published findings</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 2: El Paso Specific -->
+<section style="padding: 2rem 0;">
+  <div class="container">
+    <div class="fact-section">
+      <div class="section-label">02 — El Paso Specific</div>
+      <h2>Questions specific to our city</h2>
+      <p class="lead">These are issues documented in El Paso's own public records and transparency portal. They deserve direct answers from city leadership before any contract renewal.</p>
+
+      <!-- Open Records Box -->
+      <div class="open-records-box">
+        <h3>⏳ Open Records Request in Progress</h3>
+        <p>A community member has filed a public records request with the City of El Paso seeking detailed data on how El Paso's Flock system has been accessed, by whom, and for what purpose. We are awaiting the city's response. This page will be updated when records are received. Transparency is not a favor — it is a legal right.</p>
+      </div>
+
+      <div class="fact-cards">
+        <div class="fact-card">
+          <div class="fact-tag tag-local">El Paso Transparency Portal</div>
+          <h3>Harris County commissioner listed as having data access — no explanation given</h3>
+          <p>El Paso PD's own Flock transparency portal — a public document — lists a Harris County Precinct 3 Commissioner's office as an entity with access to El Paso's camera data. A commissioner's office is not a law enforcement agency. No public explanation has been provided for why a political office in Harris County, hundreds of miles away, has access to El Paso's surveillance data.</p>
+          <p>We are not asserting wrongdoing. We are asserting that El Paso residents deserve a clear, public answer to a straightforward question: why does this office have access, under what authority, and what data has it accessed?</p>
+          <div class="source-note">Source: El Paso PD Flock Transparency Portal (public record) — <a href="https://transparency.flocksafety.com/elpaso-pd" target="_blank" rel="noopener">transparency.flocksafety.com/elpaso-pd</a>; reported by <a href="https://elpasonews.org/2025/12/23/el-paso-police-use-controversial-traffic-cameras-other-cities-are-cancelling-for-privacy-concerns/" target="_blank" rel="noopener">El Paso News</a></div>
+        </div>
+        <div class="fact-card">
+          <div class="fact-tag tag-legal">Texas DPS</div>
+          <h3>Texas DPS investigated Flock's required operating license</h3>
+          <p>The Texas Department of Public Safety launched an investigation into whether Flock Safety holds the private security license required to legally operate surveillance systems in Texas. Operating without that license raises questions about the legal standing of El Paso's existing contract and any renewal.</p>
+          <div class="source-note">Source: <a href="https://elpasonews.org/2025/12/23/el-paso-police-use-controversial-traffic-cameras-other-cities-are-cancelling-for-privacy-concerns/" target="_blank" rel="noopener">El Paso News, December 2025</a></div>
+        </div>
+        <div class="fact-card">
+          <div class="fact-tag tag-local">Border City Context</div>
+          <h3>El Paso has no state-level data protection for ALPR systems</h3>
+          <p>Texas has no state law governing how license plate reader data must be stored, who can access it, or how long it can be retained. Multiple bills have been introduced in the Texas Legislature — all died in committee. This means El Paso residents' protections exist only in the contract itself — the same contract Flock rewrote with 147 changes in February 2026.</p>
+          <p>For a border city, this gap is especially significant. When there is no state law and the contract language is controlled by the vendor, the only protection is the vendor's good faith.</p>
+          <div class="source-note">Source: Texas Legislature bill tracking; toolkit analysis by DeflockYourCity</div>
+        </div>
+        <div class="fact-card">
+          <div class="fact-tag tag-local">Immigration</div>
+          <h3>Federal immigration access: assurances vs. enforceable guarantees</h3>
+          <p>El Paso PD has stated verbally that it does not share data with federal immigration agencies. However, in other cities, Flock enabled federal agency access for extended periods without the local police department's knowledge. The department did not authorize it — the vendor did it anyway.</p>
+          <p>For El Paso — a majority-Hispanic border city — the difference between a verbal assurance and a written, enforceable contract provision matters enormously. The current contract has not been released publicly in full.</p>
+          <div class="source-note">Source: <a href="https://elpasomatters.org/2026/03/02/flock-safety-license-plate-reader-cameras-contract-el-paso-texas-city-council/" target="_blank" rel="noopener">El Paso Matters, March 2026</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 3: Contract -->
+<section style="padding: 2rem 0;">
+  <div class="container">
+    <div class="fact-section">
+      <div class="section-label">03 — The Contract</div>
+      <h2>What Flock changed — and what it means</h2>
+      <p class="lead">In February 2026, Flock rewrote its Terms of Service. This is the contract framework any renewal would fall under.</p>
+
+      <div class="fact-cards">
+        <div class="fact-card">
+          <div class="fact-tag tag-contract">Terms of Service</div>
+          <h3>147 changes in Flock's February 2026 Terms rewrite</h3>
+          <p>Flock Safety rewrote its master Terms of Service in February 2026, making 147 documented changes. One of the most significant: the deletion of the clause that previously stated "Flock does not own and shall not sell Customer Data." That language no longer exists in the current terms.</p>
+          <div class="source-note">Source: Documented by DeflockYourCity toolkit; independently verifiable via Flock's published terms</div>
+        </div>
+        <div class="fact-card">
+          <div class="fact-tag tag-contract">Platform Capabilities</div>
+          <h3>Flock's patent describes classifying people by race, gender, height, and weight</h3>
+          <p>Flock Safety holds US Patent 11416545B1, which describes technology capable of classifying individuals by race, gender, height, and weight from camera footage. El Paso's contract covers Flock cameras. Residents should know whether these capabilities are enabled, disabled, or contractually prohibited in El Paso's deployment.</p>
+          <div class="source-note">Source: US Patent 11416545B1 (public record, searchable at patents.google.com)</div>
+        </div>
+        <div class="fact-card">
+          <div class="fact-tag tag-contract">Nova Platform</div>
+          <h3>Flock is building a data platform that tracks individuals without a warrant</h3>
+          <p>In May 2025, investigative outlet 404 Media reported that Flock was developing "Nova" — described internally as a "public safety data platform" that supplements ALPR data with commercial data sources to track specific individuals without a warrant. The Electronic Frontier Foundation called it a "dystopian panopticon." Nova was already in use by law enforcement in an Early Access program before the reporting surfaced.</p>
+          <div class="source-note">Source: <a href="https://www.404media.co" target="_blank" rel="noopener">404 Media, May 2025</a>; Electronic Frontier Foundation</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 4: Vendor Claims vs Reality -->
+<section style="padding: 2rem 0;">
+  <div class="container">
+    <div class="fact-section">
+      <div class="section-label">04 — Vendor Claims vs. Record</div>
+      <h2>What Flock says vs. what the record shows</h2>
+      <p class="lead">El Paso city officials have cited Flock's assurances. Here is how those assurances compare to documented incidents in other cities.</p>
+
+      <div style="overflow-x: auto;">
+        <table class="verdict-table">
+          <thead>
+            <tr>
+              <th>The claim</th>
+              <th>What the record shows</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>"Data will not be shared with federal agencies"</td>
+              <td>In multiple cities, Flock enabled federal access without the police department's knowledge or authorization. The department found out after the fact.</td>
+              <td><span class="badge-disputed">⚠ Disputed by record</span></td>
+            </tr>
+            <tr>
+              <td>"Cameras only capture the back of vehicles and license plates"</td>
+              <td>Flock's own patent (US11416545B1) describes classifying individuals by race, gender, height, and weight. Flock's "Condor" PTZ cameras can zoom in on faces. The platform's capabilities exceed what officers are told it does.</td>
+              <td><span class="badge-disputed">⚠ Incomplete</span></td>
+            </tr>
+            <tr>
+              <td>"We have 30-day data retention"</td>
+              <td>30-day retention is a dashboard setting — not a contractual guarantee. The contract language and the dashboard setting are two different things. Settings can be changed by the vendor.</td>
+              <td><span class="badge-disputed">⚠ Needs verification</span></td>
+            </tr>
+            <tr>
+              <td>"Multi-factor authentication protects the system"</td>
+              <td>El Paso PD states MFA is required. Flock previously did not require it system-wide. Independent verification of El Paso's specific configuration has not been made public.</td>
+              <td><span class="badge-pending">⏳ Unverified</span></td>
+            </tr>
+            <tr>
+              <td>"Cambridge, MA terminated for breach of trust"</td>
+              <td>After Cambridge City Council voted to deactivate the cameras, Flock installed additional cameras anyway without authorization. The contract was terminated for "breach of trust."</td>
+              <td><span class="badge-confirmed">✓ Confirmed</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 5: What We're Asking -->
+<section style="padding: 2rem 0;">
+  <div class="container">
+    <div class="fact-section">
+      <div class="section-label">05 — Our Position</div>
+      <h2>What we're asking El Paso City Council to do</h2>
+      <p class="lead">We are not asking for the cameras to be removed. We are asking for the governance conditions that should have been in place from the start.</p>
+
+      <ul class="asks-list">
+        <li><span class="ask-num">01</span> Publish the full current contract publicly before any renewal is signed</li>
+        <li><span class="ask-num">02</span> Provide a public explanation for the Harris County commissioner data access listed on EPPD's transparency portal</li>
+        <li><span class="ask-num">03</span> Require an independent security audit — not a vendor self-assessment</li>
+        <li><span class="ask-num">04</span> Cap data retention by city ordinance, not just by a vendor dashboard setting</li>
+        <li><span class="ask-num">05</span> Require a written, enforceable prohibition on federal immigration agency access — not a verbal assurance</li>
+        <li><span class="ask-num">06</span> Require a council vote before any new data-sharing agreements are activated</li>
+        <li><span class="ask-num">07</span> Clarify the status of the Texas DPS licensing investigation before renewal</li>
+        <li><span class="ask-num">08</span> Confirm in writing which Flock platform capabilities are active, disabled, or contractually prohibited in El Paso's deployment</li>
+      </ul>
+
+      <div style="margin-top: 2rem;">
+        <a href="action.html" class="btn btn-primary">Contact Your Council Member →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sources -->
+<section style="padding: 2rem 0 4rem;">
+  <div class="container">
+    <div class="section-label">Sources</div>
+    <h2 style="margin-bottom: 0.5rem;">Verify everything yourself</h2>
+    <p style="color: var(--gray); font-size: 0.93rem; margin-bottom: 1.5rem;">Every claim on this page is independently verifiable. Here are the primary sources.</p>
+
+    <div class="sources-grid">
+      <div class="source-card">
+        <div class="source-type">Federal Database</div>
+        <p>National Vulnerability Database — 22 Flock CVEs</p>
+        <a href="https://nvd.nist.gov" target="_blank" rel="noopener">nvd.nist.gov →</a>
+      </div>
+      <div class="source-card">
+        <div class="source-type">Local Reporting</div>
+        <p>El Paso Matters — comprehensive coverage of the March 3 council vote and contract details</p>
+        <a href="https://elpasomatters.org/2026/03/02/flock-safety-license-plate-reader-cameras-contract-el-paso-texas-city-council/" target="_blank" rel="noopener">elpasomatters.org →</a>
+      </div>
+      <div class="source-card">
+        <div class="source-type">Local Reporting</div>
+        <p>El Paso News — Harris County data access, Texas DPS investigation</p>
+        <a href="https://elpasonews.org/2025/12/23/el-paso-police-use-controversial-traffic-cameras-other-cities-are-cancelling-for-privacy-concerns/" target="_blank" rel="noopener">elpasonews.org →</a>
+      </div>
+      <div class="source-card">
+        <div class="source-type">Public Record</div>
+        <p>El Paso PD Flock Transparency Portal — data sharing, usage statistics</p>
+        <a href="https://transparency.flocksafety.com/elpaso-pd" target="_blank" rel="noopener">transparency.flocksafety.com →</a>
+      </div>
+      <div class="source-card">
+        <div class="source-type">Patent Record</div>
+        <p>US Patent 11416545B1 — Flock's vehicle and person classification capabilities</p>
+        <a href="https://patents.google.com/patent/US11416545B1" target="_blank" rel="noopener">patents.google.com →</a>
+      </div>
+      <div class="source-card">
+        <div class="source-type">Community Toolkit</div>
+        <p>DeflockYourCity ALPR Toolkit — sourced research, legal analysis, council briefing templates</p>
+        <a href="https://github.com/DeflockYourCity/flock-alpr-toolkit" target="_blank" rel="noopener">github.com/DeflockYourCity →</a>
+      </div>
+      <div class="source-card">
+        <div class="source-type">Investigative Reporting</div>
+        <p>404 Media — Flock Nova platform reporting, May 2025</p>
+        <a href="https://www.404media.co" target="_blank" rel="noopener">404media.co →</a>
+      </div>
+      <div class="source-card">
+        <div class="source-type">Wikipedia</div>
+        <p>Flock Safety — overview of the company, documented incidents, court rulings</p>
+        <a href="https://en.wikipedia.org/wiki/Flock_Safety" target="_blank" rel="noopener">wikipedia.org →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">DEFLOCK EL PASO — deflockelpaso.org</div>
+    <ul class="footer-links">
+      <li><a href="problem.html">The Problem</a></li>
+      <li><a href="facts.html">Facts &amp; Evidence</a></li>
+      <li><a href="action.html">Take Action</a></li>
+      <li><a href="blog/index.html">News</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="es.html">En Español</a></li>
+      <li><a href="mailto:contact@deflockelpaso.org">contact@deflockelpaso.org</a></li>
+    </ul>
+    <div class="footer-copy">© 2026 DeFlock El Paso. Content available under CC BY-SA 4.0. Not affiliated with any other organization. This site contains no legal advice.</div>
+  </div>
+</footer>
+
+<script>
+  var toggle = document.querySelector('.nav-toggle');
+  if (toggle) {
+    toggle.addEventListener('click', function() {
+      this.classList.toggle('open');
+      document.getElementById('nav-links').classList.toggle('open');
+    });
+  }
+</script>
+
+</body>
+</html>
