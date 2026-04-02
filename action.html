@@ -10,7 +10,7 @@
   <style>
     .position-statement {
       border-left: 3px solid var(--amber);
-      padding: 2rem 2rem;
+      padding: 2rem;
       background: rgba(245,166,35,0.06);
       border-radius: 0 var(--radius) var(--radius) 0;
       margin-bottom: 3rem;
@@ -23,16 +23,8 @@
       line-height: 1.2;
       margin-bottom: 1rem;
     }
-    .position-statement .big-line em {
-      color: var(--amber);
-      font-style: italic;
-    }
-    .position-statement p {
-      font-size: 0.95rem;
-      color: rgba(244,241,235,0.75);
-      margin: 0;
-      line-height: 1.7;
-    }
+    .position-statement .big-line em { color: var(--amber); font-style: italic; }
+    .position-statement p { font-size: 0.95rem; color: rgba(244,241,235,0.75); margin: 0; line-height: 1.7; }
 
     .council-grid {
       display: grid;
@@ -44,10 +36,7 @@
       overflow: hidden;
       margin: 2rem 0;
     }
-    .council-card {
-      background: var(--navy2);
-      padding: 1.6rem;
-    }
+    .council-card { background: var(--navy2); padding: 1.6rem; }
     .council-card.ally {
       background: rgba(245,166,35,0.07);
       border-left: 3px solid var(--amber);
@@ -60,14 +49,9 @@
       color: var(--gray);
       margin-bottom: 0.4rem;
     }
-    .council-card.ally .district-label {
-      color: var(--amber);
-    }
-    .council-card h3 {
-      font-size: 1rem;
-      margin-bottom: 0.3rem;
-    }
-    .council-card .vote-badge {
+    .council-card.ally .district-label { color: var(--amber); }
+    .council-card h3 { font-size: 1rem; margin-bottom: 0.3rem; }
+    .vote-badge {
       font-family: var(--font-mono);
       font-size: 0.68rem;
       letter-spacing: 0.06em;
@@ -76,20 +60,9 @@
       margin-bottom: 0.8rem;
       display: inline-block;
     }
-    .vote-kept {
-      background: rgba(217,79,61,0.15);
-      color: #e07060;
-    }
-    .vote-ally {
-      background: rgba(126,207,154,0.15);
-      color: #7ecf9a;
-    }
-    .council-links {
-      display: flex;
-      flex-direction: column;
-      gap: 0.4rem;
-      margin-top: 0.8rem;
-    }
+    .vote-kept { background: rgba(217,79,61,0.15); color: #e07060; }
+    .vote-ally { background: rgba(126,207,154,0.15); color: #7ecf9a; }
+    .council-links { display: flex; flex-direction: column; gap: 0.4rem; margin-top: 0.8rem; }
     .council-links a {
       font-family: var(--font-mono);
       font-size: 0.78rem;
@@ -100,10 +73,7 @@
       gap: 0.4rem;
     }
     .council-links a:hover { text-decoration: underline; }
-    .council-links .icon {
-      font-size: 0.7rem;
-      opacity: 0.7;
-    }
+    .council-links .icon { font-size: 0.7rem; opacity: 0.7; }
 
     .script-box {
       background: var(--navy2);
@@ -224,10 +194,7 @@
       padding: 1rem 1.4rem;
       border-bottom: 1px solid var(--border);
     }
-    .public-comment-box .pcb-header h3 {
-      font-size: 1rem;
-      margin: 0;
-    }
+    .public-comment-box .pcb-header h3 { font-size: 1rem; margin: 0; }
     .public-comment-box .pcb-body {
       padding: 1.2rem 1.4rem;
       font-size: 0.9rem;
@@ -258,17 +225,14 @@
       color: var(--gray);
       margin-bottom: 0.6rem;
     }
-    .mayor-card .vote-badge { margin-bottom: 0; }
   </style>
 </head>
 <body>
 
-<!-- Urgency Bar -->
 <div class="urgency-bar">
   ⚠ The El Paso Flock Safety contract expires <strong>May 16, 2026</strong>. Tell your council member to cancel it. &nbsp;<a href="#contact">Contact them now →</a>
 </div>
 
-<!-- Navigation -->
 <nav>
   <div class="nav-inner">
     <a class="nav-logo" href="index.html">DEFLOCK EL PASO</a>
@@ -293,38 +257,35 @@
     <div class="section-label">Take Action</div>
     <h1 style="max-width: 700px; margin-bottom: 1.5rem;">The contract expires May 16.<br>Make your voice heard now.</h1>
 
-    <!-- Position Statement -->
     <div class="position-statement">
       <div class="big-line">El Paso is not Flock's customer.<br><em>El Paso residents are the product.</em></div>
-      <p>We are calling on the El Paso City Council to cancel the Flock Safety contract and not renew it. We oppose this vendor and any similar private, venture-backed surveillance company that profits from the data of El Paso residents. If the city insists on renewing despite public opposition, we demand the minimum conditions listed on our <a href="facts.html">facts page</a> — but our position is clear: the contract should end on May 16.</p>
+      <p>We are calling on El Paso City Council to cancel the Flock Safety contract and not renew it. We oppose this vendor and any similar private, venture-backed surveillance company that profits from El Paso residents' data. If the city insists on renewing despite public opposition, we demand the <a href="facts.html#conditions">minimum conditions listed on our facts page</a> — but our position is clear: the contract should end on May 16.</p>
     </div>
   </div>
 </section>
 
-<!-- Why We Want Removal -->
+<!-- Why Removal -->
 <section style="padding: 2rem 0;">
   <div class="container">
     <div class="section-label">Why Removal — Not Reform</div>
     <h2 style="margin-bottom: 1rem;">The business model is the problem</h2>
-    <p style="color: rgba(244,241,235,0.7); max-width: 680px; margin-bottom: 2rem;">Flock Safety is not a public safety company that happens to collect data. It is a data company that uses public safety as its entry point. Understanding their business model explains everything.</p>
+    <p style="color: rgba(244,241,235,0.7); max-width: 680px; margin-bottom: 2rem;">Flock Safety is not a public safety company that happens to collect data. It is a data company that uses public safety as its entry point. The price tells you everything.</p>
 
     <div class="business-model">
       <div class="big-stat">$7,500,000,000</div>
-      <div class="stat-explain">Flock Safety's valuation — a Georgia startup with $950 million in venture capital funding</div>
+      <div class="stat-explain">Flock Safety's valuation — a Georgia startup with $950 million in venture capital</div>
 
-      <div class="big-stat" style="margin-top: 1.5rem;">$4,683</div>
-      <div class="stat-explain">What El Paso paid per camera per year — 150 cameras, $702,500 total grant. For 24/7 surveillance of an entire major city.</div>
+      <div class="big-stat">$4,683</div>
+      <div class="stat-explain">What El Paso paid per camera per year — 150 cameras, $702,500 total, 24/7 surveillance of a major border city</div>
 
-      <p style="font-size: 0.95rem; color: rgba(244,241,235,0.8); line-height: 1.7; margin-bottom: 1rem;">Ask yourself: how does a company justify a $7.5 billion valuation by charging less than $5,000 per camera per year? The hardware isn't the product. The network is. Every city Flock enters adds to a massive, interconnected database of vehicle movements across America. That database — your routes, your patterns, your life — is what investors are valuing at $7.5 billion.</p>
-
+      <p style="font-size: 0.95rem; color: rgba(244,241,235,0.8); line-height: 1.7; margin-bottom: 1rem;">How does a company justify a $7.5 billion valuation by charging less than $5,000 per camera per year? The hardware is not the product. The network is. Every city Flock enters adds to a massive, interconnected database of vehicle movements across America. That database — your routes, your patterns, your life — is what investors are valuing at $7.5 billion.</p>
       <p style="font-size: 0.95rem; color: rgba(244,241,235,0.8); line-height: 1.7; margin-bottom: 1rem;">El Paso didn't buy a public safety tool. El Paso gave a private company free access to photograph every vehicle in our city, 24 hours a day, in exchange for hardware that costs less than a used car per year.</p>
-
       <p style="font-size: 0.95rem; color: rgba(244,241,235,0.8); line-height: 1.7; margin: 0;">This is not a vendor accountability problem that better contract terms can fix. This is a business model problem. The only solution is to not participate in it.</p>
     </div>
 
     <div class="alert-box">
       <div class="alert-label">What we support instead</div>
-      <p>If El Paso wants license plate reader technology, it should be locally governed and locally accountable — owned and controlled by the city, under ordinance, with elected officials answerable to residents. Not a venture-backed startup in Georgia that needs to justify a $7.5 billion valuation to its investors. Public safety tools should serve the public — not a private data network.</p>
+      <p>If El Paso wants license plate reader technology, it should be locally governed and locally accountable — owned and controlled by the city, under ordinance, with elected officials answerable to residents. Not a venture-backed startup in Georgia that needs to justify a $7.5 billion valuation to investors. Public safety tools should serve the public — not a private data network.</p>
     </div>
   </div>
 </section>
@@ -337,7 +298,7 @@
     <p style="color: rgba(244,241,235,0.7); margin-bottom: 2rem; font-size: 0.95rem;">Start with whichever feels easiest. All three together take less than 15 minutes.</p>
 
     <ul class="steps-list">
-      <li><strong>Call your city council representative.</strong> A phone call carries more weight than an email. Use the script below. It takes 2 minutes. You don't need to know everything — just read the script.</li>
+      <li><strong>Call your city council representative.</strong> A phone call carries more weight than an email. Use the script below. It takes 2 minutes. You don't need to know everything — just read it.</li>
       <li><strong>Send an email.</strong> Copy the email template below and send it directly to your representative. If you don't know your district, use the <a href="https://gis.elpasotexas.gov/districting/" target="_blank" rel="noopener">city's district finder</a>.</li>
       <li><strong>Speak at public comment.</strong> City Council meets most Tuesday mornings. Any El Paso resident can speak for 3 minutes. Sign up by 9am the day of the meeting. Details below.</li>
     </ul>
@@ -349,7 +310,7 @@
   <div class="container">
     <div class="section-label">Script — Phone Call</div>
     <h2 style="margin-bottom: 0.5rem;">What to say when you call</h2>
-    <p style="color: rgba(244,241,235,0.7); margin-bottom: 1.5rem; font-size: 0.95rem;">You'll likely reach a staffer, not the representative directly. That's fine. Staffers log every call and report them. Be polite, be clear, and stick to the script.</p>
+    <p style="color: rgba(244,241,235,0.7); margin-bottom: 1.5rem; font-size: 0.95rem;">You'll likely reach a staffer, not the representative directly. That's fine — staffers log every call. Be polite, be clear, and stick to the script.</p>
 
     <div class="script-box">
       <div class="script-header">
@@ -360,16 +321,16 @@
 
 I'm calling about the Flock Safety license plate reader contract, which expires on May 16th.
 
-I want [REPRESENTATIVE NAME] to know that I am opposed to renewing this contract. Flock Safety has a documented record of security failures, unauthorized data access, and quietly rewriting its own terms to remove data protections. More than 30 cities across the country have already canceled their Flock contracts.
+I want [REPRESENTATIVE NAME] to know that I am opposed to renewing this contract. Flock Safety has a documented record of security failures — 22 confirmed vulnerabilities in the federal cybersecurity database, cameras that can be hacked in 30 seconds, and officer passwords found for sale on the dark web. The company also quietly deleted the clause prohibiting data sales from its contract in February 2026.
 
-El Paso residents are not Flock's customer — we are their product. Our movements, our patterns, our data — that's what funds a $7.5 billion valuation for a private company we never agreed to work for.
+El Paso paid less than $5,000 per camera per year for 150 cameras that photograph every vehicle in our city around the clock. Flock is valued at $7.5 billion. El Paso residents are not Flock's customer — we are their product.
 
-I'm asking [REPRESENTATIVE NAME] to vote against renewing the Flock contract when it comes before the council, and to support locally governed alternatives that keep El Paso's data in El Paso hands.
+I am asking [REPRESENTATIVE NAME] to vote against renewing the Flock contract and to support locally governed alternatives that keep El Paso's data in El Paso's hands.
 
 Can I count on [REPRESENTATIVE NAME] to oppose this renewal?
 
-Thank you for your time."</div>
-      <div class="script-note">Replace [YOUR NAME], [YOUR DISTRICT], and [REPRESENTATIVE NAME] with your information before calling.</div>
+Thank you."</div>
+      <div class="script-note">Replace [YOUR NAME], [YOUR DISTRICT], and [REPRESENTATIVE NAME] before calling.</div>
     </div>
   </div>
 </section>
@@ -379,7 +340,7 @@ Thank you for your time."</div>
   <div class="container">
     <div class="section-label">Script — Email</div>
     <h2 style="margin-bottom: 0.5rem;">What to send</h2>
-    <p style="color: rgba(244,241,235,0.7); margin-bottom: 1.5rem; font-size: 0.95rem;">Keep it short. Council staff read hundreds of emails. A focused, personal message is more effective than a long one.</p>
+    <p style="color: rgba(244,241,235,0.7); margin-bottom: 1.5rem; font-size: 0.95rem;">Keep it focused. A clear, personal message is more effective than a long one.</p>
 
     <div class="script-box">
       <div class="script-header">
@@ -402,17 +363,19 @@ I am writing to ask you to oppose the renewal of the City's contract with Flock 
 
 My concerns are straightforward:
 
-Flock Safety has a documented record of security failures — 22 confirmed vulnerabilities in the federal cybersecurity database, and a history of enabling unauthorized federal access to local data in cities across the country without the knowledge of local police departments.
+Flock Safety's cameras run Android 8.1 — an operating system discontinued in 2021 that will never receive another security update. The federal cybersecurity database lists 22 confirmed vulnerabilities. Cameras can be physically hacked in 30 seconds. Officer login credentials have been found for sale on dark web markets.
 
-In February 2026, Flock quietly rewrote its Terms of Service with 147 changes, including deleting the clause that previously stated they would not sell customer data.
+In February 2026, Flock rewrote its Terms of Service with 147 changes — including deleting the clause that previously stated they would not sell customer data.
 
 El Paso PD's own transparency portal lists a Harris County commissioner's office — not a law enforcement agency — as having access to our camera data, with no public explanation.
 
-El Paso paid less than $5,000 per camera per year for 150 cameras that photograph every vehicle in our city, 24 hours a day. That price only makes sense if our data is the real product. Flock Safety is valued at $7.5 billion. El Paso residents are not their customer — we are their inventory.
+ICE's own Privacy Impact Assessment (DHS/ICE/PIA-039) requires audit logs to be provided to ICE — not to local police. EPPD cannot independently verify who has searched El Paso's data. This is a border city. That matters.
 
-More than 30 cities have already canceled their Flock contracts. El Paso should join them.
+El Paso paid less than $5,000 per camera per year for 150 cameras photographing every vehicle in our city around the clock. Flock Safety is valued at $7.5 billion. El Paso residents are not Flock's customer — we are their product.
 
-I am asking you to vote against renewing this contract, and to support an open process to evaluate locally governed alternatives that keep El Paso data under El Paso control.
+More than 30 cities have canceled their Flock contracts. El Paso should join them.
+
+I am asking you to vote against renewing this contract and to support an open process to evaluate locally governed alternatives — tools owned and controlled by El Paso, accountable to El Paso elected officials.
 
 Thank you for your service to our community.
 
@@ -441,18 +404,19 @@ Respectfully,
       </div>
       <div class="council-links">
         <a href="tel:9152120000"><span class="icon">☎</span> (915) 212-0000</a>
-        <a href="/cdn-cgi/l/email-protection#7c111d05130e3c19100c1d0f130819041d0f521b130a"><span class="icon">✉</span> <span class="__cf_email__" data-cfemail="8de0ecf4e2ffcde8e1fdecfee2f9e8f5ecfea3eae2fb">[email&#160;protected]</span></a>
+        <a href="mailto:mayor@elpasotexas.gov"><span class="icon">✉</span> mayor@elpasotexas.gov</a>
       </div>
     </div>
 
-    <!-- Council Grid -->
     <div class="council-grid">
 
       <div class="council-card">
         <div class="district-label">District 1 — Northwest</div>
         <h3>Alejandra Chávez</h3>
         <div class="vote-badge vote-kept">Voted to block contract cancellation</div>
-          <a href="/cdn-cgi/l/email-protection#e5818c9691978c8691d4a580899584968a91809d8496cb828a93"><span class="icon">✉</span> <span class="__cf_email__" data-cfemail="02666b7176706b61763342676e7263716d76677a63712c656d74">[email&#160;protected]</span></a>
+        <div class="council-links">
+          <a href="tel:9152120001"><span class="icon">☎</span> (915) 212-0001</a>
+          <a href="mailto:district1@elpasotexas.gov"><span class="icon">✉</span> district1@elpasotexas.gov</a>
         </div>
       </div>
 
@@ -462,7 +426,7 @@ Respectfully,
         <div class="vote-badge vote-kept">Voted to block contract cancellation</div>
         <div class="council-links">
           <a href="tel:9152120002"><span class="icon">☎</span> (915) 212-0002</a>
-          <a href="/cdn-cgi/l/email-protection#1a7e73696e6873796e285a7f766a7b69756e7f627b69347d756c"><span class="icon">✉</span> <span class="__cf_email__" data-cfemail="3c58554f484e555f480e7c59504c5d4f534859445d4f125b534a">[email&#160;protected]</span></a>
+          <a href="mailto:district2@elpasotexas.gov"><span class="icon">✉</span> district2@elpasotexas.gov</a>
         </div>
       </div>
 
@@ -472,7 +436,7 @@ Respectfully,
         <div class="vote-badge vote-kept">Voted to block contract cancellation</div>
         <div class="council-links">
           <a href="tel:9152120003"><span class="icon">☎</span> (915) 212-0003</a>
-          <a href="/cdn-cgi/l/email-protection#b5d1dcc6c1c7dcd6c186f5d0d9c5d4c6dac1d0cdd4c69bd2dac3"><span class="icon">✉</span> <span class="__cf_email__" data-cfemail="690d001a1d1b000a1d5a290c0519081a061d0c11081a470e061f">[email&#160;protected]</span></a>
+          <a href="mailto:district3@elpasotexas.gov"><span class="icon">✉</span> district3@elpasotexas.gov</a>
         </div>
       </div>
 
@@ -482,7 +446,7 @@ Respectfully,
         <div class="vote-badge vote-kept">Voted to block contract cancellation</div>
         <div class="council-links">
           <a href="tel:9152120004"><span class="icon">☎</span> (915) 212-0004</a>
-          <a href="/cdn-cgi/l/email-protection#89ede0fafdfbe0eafdbdc9ece5f9e8fae6fdecf1e8faa7eee6ff"><span class="icon">✉</span> <span class="__cf_email__" data-cfemail="f5919c8681879c9681c1b590998594869a81908d9486db929a83">[email&#160;protected]</span></a>
+          <a href="mailto:district4@elpasotexas.gov"><span class="icon">✉</span> district4@elpasotexas.gov</a>
         </div>
       </div>
 
@@ -492,7 +456,7 @@ Respectfully,
         <div class="vote-badge vote-kept">Voted to block contract cancellation</div>
         <div class="council-links">
           <a href="tel:9152120005"><span class="icon">☎</span> (915) 212-0005</a>
-          <a href="/cdn-cgi/l/email-protection#91f5f8e2e5e3f8f2e5a4d1f4fde1f0e2fee5f4e9f0e2bff6fee7"><span class="icon">✉</span> <span class="__cf_email__" data-cfemail="1f7b766c6b6d767c6b2a5f7a736f7e6c706b7a677e6c31787069">[email&#160;protected]</span></a>
+          <a href="mailto:district5@elpasotexas.gov"><span class="icon">✉</span> district5@elpasotexas.gov</a>
         </div>
       </div>
 
@@ -502,7 +466,7 @@ Respectfully,
         <div class="vote-badge vote-kept">Voted to block contract cancellation</div>
         <div class="council-links">
           <a href="tel:9152120006"><span class="icon">☎</span> (915) 212-0006</a>
-          <a href="/cdn-cgi/l/email-protection#83e7eaf0f7f1eae0f7b5c3e6eff3e2f0ecf7e6fbe2f0ade4ecf5"><span class="icon">✉</span> <span class="__cf_email__" data-cfemail="f4909d8780869d9780c2b491988495879b80918c9587da939b82">[email&#160;protected]</span></a>
+          <a href="mailto:district6@elpasotexas.gov"><span class="icon">✉</span> district6@elpasotexas.gov</a>
         </div>
       </div>
 
@@ -512,7 +476,7 @@ Respectfully,
         <div class="vote-badge vote-ally">✓ Voted for contract cancellation</div>
         <div class="council-links">
           <a href="tel:9152120007"><span class="icon">☎</span> (915) 212-0007</a>
-          <a href="/cdn-cgi/l/email-protection#89ede0fafdfbe0eafdbec9ece5f9e8fae6fdecf1e8faa7eee6ff"><span class="icon">✉</span> <span class="__cf_email__" data-cfemail="abcfc2d8dfd9c2c8df9cebcec7dbcad8c4dfced3cad885ccc4dd">[email&#160;protected]</span></a>
+          <a href="mailto:district7@elpasotexas.gov"><span class="icon">✉</span> district7@elpasotexas.gov</a>
         </div>
       </div>
 
@@ -522,13 +486,13 @@ Respectfully,
         <div class="vote-badge vote-ally">✓ Voted for contract cancellation</div>
         <div class="council-links">
           <a href="tel:9152120008"><span class="icon">☎</span> (915) 212-0008</a>
-          <a href="/cdn-cgi/l/email-protection#91f5f8e2e5e3f8f2e5a9d1f4fde1f0e2fee5f4e9f0e2bff6fee7"><span class="icon">✉</span> <span class="__cf_email__" data-cfemail="294d405a5d5b404a5d11694c4559485a465d4c51485a074e465f">[email&#160;protected]</span></a>
+          <a href="mailto:district8@elpasotexas.gov"><span class="icon">✉</span> district8@elpasotexas.gov</a>
         </div>
       </div>
 
     </div>
 
-    <p style="font-size: 0.82rem; color: var(--gray); margin-top: 1rem; font-family: var(--font-mono);">★ Reps. Limón and Canales already voted to end the contract. Contact them to say thank you and ask them to keep pushing.</p>
+    <p style="font-size: 0.82rem; color: var(--gray); margin-top: 1rem; font-family: var(--font-mono);">★ Reps. Limón and Canales voted for cancellation. Contact them to say thank you and ask them to keep pushing. Contact the other six to change their minds.</p>
   </div>
 </section>
 
@@ -545,16 +509,15 @@ Respectfully,
       <div class="pcb-body">
         <p>El Paso City Council meets most Tuesday mornings at City Hall, 300 N. Campbell. Any resident can speak during public comment — you do not need to be invited, you do not need to be an expert, and you do not need to give your address.</p>
         <p><strong>To sign up:</strong> Sign up by 9am the day of the meeting. Call the City Clerk at (915) 212-0049 or email <a href="mailto:cityclerk@elpasotexas.gov">cityclerk@elpasotexas.gov</a></p>
-        <p><strong>To sign up:</strong> Contact the City Clerk's office by Tuesday at 9am the week of the meeting you want to attend. Call (915) 212-0049 or email <a href="/cdn-cgi/l/email-protection#3d5e5449445e51584f567d58514d5c4e524958455c4e135a524b"><span class="__cf_email__" data-cfemail="1b78726f6278777e69705b7e776b7a68746f7e637a68357c746d">[email&#160;protected]</span></a></p>
         <p><strong>You get 3 minutes.</strong> Stick to the facts. Be respectful. End with a clear ask: "I am asking this council to vote against renewing the Flock Safety contract."</p>
-        <p><strong>Need Spanish interpretation?</strong> Email <a href="/cdn-cgi/l/email-protection#482b213c312b242d3a23082d2438293b273c2d30293b662f273e"><span class="__cf_email__" data-cfemail="9af9f3eee3f9f6ffe8f1dafff6eafbe9f5eeffe2fbe9b4fdf5ec">[email&#160;protected]</span></a> by noon the Friday before the meeting to request it at no cost.</p>
-        <p><strong>Pro tip:</strong> Print and bring copies of the <a href="facts.html">facts page</a> to hand to council members and staff. A physical document in someone's hand is harder to ignore than a website.</p>
+        <p><strong>Need Spanish interpretation?</strong> Email <a href="mailto:cityclerk@elpasotexas.gov">cityclerk@elpasotexas.gov</a> by noon the Friday before the meeting to request it at no cost.</p>
+        <p><strong>Pro tip:</strong> Print and bring copies of our <a href="facts.html">facts page</a> to hand to council members and staff. A physical document in someone's hand is harder to ignore than a website.</p>
       </div>
     </div>
 
     <div class="alert-box" style="margin-top: 1.5rem;">
       <div class="alert-label">What to say in 3 minutes</div>
-      <p>State your name and district. Say you oppose the Flock renewal. Give one or two specific facts — the 22 security vulnerabilities, the Harris County data access, the $7.5 billion valuation built on resident data. End with your ask. Sit down. That's it. One person speaking clearly and calmly does more than ten people shouting.</p>
+      <p>State your name and district. Say you oppose the Flock renewal and want it canceled. Give one or two specific facts — the Android 8.1 operating system that can never be patched, the Harris County data access question, the $7.5 billion valuation built on resident data. End with your ask. Sit down. One person speaking clearly and calmly does more than ten people shouting.</p>
     </div>
   </div>
 </section>
@@ -564,20 +527,65 @@ Respectfully,
   <div class="container">
     <div class="section-label">Spread the Word</div>
     <h2 style="margin-bottom: 1rem;">Share this site</h2>
-    <p style="color: rgba(244,241,235,0.7); max-width: 580px; margin-bottom: 2rem;">The most powerful thing you can do after contacting your representative is tell someone else. Share this site. Tell your neighbors. Post in your neighborhood group. The contract expires May 16 — we don't have much time.</p>
+    <p style="color: rgba(244,241,235,0.7); max-width: 580px; margin-bottom: 2rem;">The most powerful thing you can do after contacting your representative is tell someone else. Share this site. Tell your neighbors. Post it in your neighborhood group. The contract expires May 16 — time is short.</p>
 
     <div class="points-grid">
       <div class="point-card">
         <div class="point-num">Share the site</div>
         <h3>deflockelpaso.org</h3>
-        <p>Send it to anyone who drives in El Paso. That's everyone.</p>
+        <p>Send it to anyone who drives in El Paso. That's everyone. Every person who drives past a Flock camera is in this.</p>
       </div>
       <div class="point-card">
         <div class="point-num">Use the line</div>
         <h3>"El Paso residents are the product."</h3>
-        <p>Post it. Say it. Put it in your neighborhood Facebook group. It's true and it's hard to argue with.</p>
+        <p>Post it. Say it. Put it in your neighborhood group. It's true, it's documented, and it's hard to argue with.</p>
       </div>
       <div class="point-card">
-        <div class="point-num">Contact us</div>
-        <h3>Get involved</h3>
-        <p>Want to do more th
+        <div class="point-num">Get involved</div>
+        <h3>Contact us</h3>
+        <p>Want to do more? Reach out. We're building this movement one person at a time. <a href="mailto:contact@deflockelpaso.org">contact@deflockelpaso.org</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">DEFLOCK EL PASO — deflockelpaso.org</div>
+    <ul class="footer-links">
+      <li><a href="problem.html">The Problem</a></li>
+      <li><a href="facts.html">Facts &amp; Evidence</a></li>
+      <li><a href="action.html">Take Action</a></li>
+      <li><a href="blog/index.html">News</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="es.html">En Español</a></li>
+      <li><a href="mailto:contact@deflockelpaso.org">contact@deflockelpaso.org</a></li>
+    </ul>
+    <div class="footer-copy">© 2026 DeFlock El Paso. Content available under CC BY-SA 4.0. Not affiliated with any other organization. This site contains no legal advice.</div>
+  </div>
+</footer>
+
+<script>
+function copyScript(id, btn) {
+  var text = document.getElementById(id).innerText;
+  navigator.clipboard.writeText(text).then(function() {
+    btn.textContent = 'Copied!';
+    btn.classList.add('copied');
+    setTimeout(function() {
+      btn.textContent = 'Copy';
+      btn.classList.remove('copied');
+    }, 2000);
+  });
+}
+var toggle = document.querySelector('.nav-toggle');
+if (toggle) {
+  toggle.addEventListener('click', function() {
+    this.classList.toggle('open');
+    document.getElementById('nav-links').classList.toggle('open');
+  });
+}
+</script>
+
+</body>
+</html>
