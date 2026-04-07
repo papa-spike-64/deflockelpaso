@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DeFlock El Paso — El contrato vence el 16 de mayo</title>
+  <meta name="description" content="El Paso tiene 150 cámaras de Flock Safety. El contrato vence el 16 de mayo de 2026. Los residentes de El Paso somos el producto. Es hora de cancelarlo.">
+  <link rel="canonical" href="https://deflockelpaso.org/es.html">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .es-body { max-width: 740px; }
+    .es-body p {
+      font-size: 1.02rem;
+      line-height: 1.82;
+      color: rgba(244,241,235,0.82);
+      margin-bottom: 1.4rem;
+    }
+    .es-body h2 { margin: 3rem 0 0.8rem; font-size: 1.5rem; }
+    .es-body h3 { margin: 1.8rem 0 0.5rem; font-size: 1.1rem; }
+    .es-body a { color: var(--amber); }
+    .es-body strong { color: var(--white); }
+
+    .lang-notice {
+      background: var(--navy2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 0.9rem 1.2rem;
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      color: var(--gray);
+      margin-bottom: 2.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .lang-notice a { color: var(--amber); }
+
+    .es-callout {
+      border-left: 3px solid var(--amber);
+      background: rgba(245,166,35,0.05);
+      padding: 1.4rem 1.8rem;
+      border-radius: 0 var(--radius) var(--radius) 0;
+      margin: 2rem 0;
+    }
+    .es-callout .callout-label {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--amber);
+      margin-bottom: 0.6rem;
+    }
+    .es-callout p {
+      font-size: 0.95rem;
+      color: rgba(244,241,235,0.82);
+      margin: 0;
+      line-height: 1.75;
+    }
+
+    .es-facts {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      margin: 2rem 0;
+    }
+    .es-fact {
+      background: var(--navy2);
+      padding: 1.6rem 1.8rem;
+    }
+    .es-fact-num {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--amber);
+      margin-bottom: 0.5rem;
+    }
+    .es-fact h3 { margin: 0 0 0.5rem; font-size: 1rem; }
+    .es-fact p { font-size: 0.92rem; color: rgba(244,241,235,0.75); margin: 0; line-height: 1.65; }
+
+    .council-es {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      margin: 1.5rem 0;
+    }
+    .council-es-item {
+      background: var(--navy2);
+      padding: 1.2rem 1.6rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+    .council-es-item.ally { background: rgba(245,166,35,0.06); border-left: 3px solid var(--amber); }
+    .council-es-item .rep-info { flex: 1; min-width: 180px; }
+    .council-es-item .rep-name { font-size: 0.95rem; color: var(--white); font-weight: 600; margin-bottom: 0.2rem; }
+    .council-es-item .rep-district { font-family: var(--font-mono); font-size: 0.7rem; color: var(--gray); letter-spacing: 0.04em; }
+    .council-es-item .rep-links { display: flex; flex-direction: column; gap: 0.3rem; }
+    .council-es-item .rep-links a { font-family: var(--font-mono); font-size: 0.75rem; color: var(--amber); text-decoration: none; }
+    .council-es-item .rep-links a:hover { text-decoration: underline; }
+    .ally-badge {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.06em;
+      padding: 0.15rem 0.4rem;
+      border-radius: 2px;
+      background: rgba(126,207,154,0.15);
+      color: #7ecf9a;
+      display: inline-block;
+      margin-top: 0.3rem;
+    }
+
+    .script-es {
+      background: var(--navy2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      margin: 1.5rem 0;
+    }
+    .script-es-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.8rem 1.2rem;
+      border-bottom: 1px solid var(--border);
+      background: rgba(245,166,35,0.05);
+    }
+    .script-es-header span {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--amber);
+    }
+    .copy-btn {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--gray);
+      padding: 0.25rem 0.6rem;
+      border-radius: 2px;
+      cursor: pointer;
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .copy-btn:hover { border-color: var(--amber); color: var(--amber); }
+    .copy-btn.copied { border-color: #7ecf9a; color: #7ecf9a; }
+    .script-es-body {
+      padding: 1.4rem 1.6rem;
+      font-size: 0.93rem;
+      line-height: 1.8;
+      color: rgba(244,241,235,0.85);
+      white-space: pre-wrap;
+    }
+    .script-es-note {
+      padding: 0.8rem 1.6rem;
+      border-top: 1px solid var(--border);
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      color: var(--gray);
+    }
+
+    .stats-es {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      margin: 2rem 0;
+    }
+    .stat-es {
+      background: var(--navy2);
+      padding: 1.4rem 1.2rem;
+    }
+    .stat-es .num { font-family: var(--font-mono); font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 600; color: var(--amber); line-height: 1; margin-bottom: 0.3rem; }
+    .stat-es .desc { font-size: 0.82rem; color: var(--gray); line-height: 1.4; }
+  </style>
+</head>
+<body>
+
+<div class="urgency-bar">
+  ⚠ El contrato de Flock Safety en El Paso vence el <strong>16 de mayo de 2026</strong>. &nbsp;<a href="action.html">Toma acción →</a>
+</div>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">DEFLOCK EL PASO</a>
+    <button class="nav-toggle" aria-label="Abrir menú" onclick="this.classList.toggle('open'); document.getElementById('nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="problem.html">El Problema</a></li>
+      <li><a href="facts.html">Los Hechos</a></li>
+      <li><a href="action.html">Toma Acción</a></li>
+      <li><a href="blog/index.html">Noticias</a></li>
+      <li><a href="resources.html">Recursos</a></li>
+      <li><a href="about.html">Quiénes Somos</a></li>
+      <li><a class="nav-lang" href="index.html">EN</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section style="padding: 4rem 0 2rem;">
+  <div class="container">
+
+    <div class="lang-notice">
+      <span>Esta página está en español. Para más información detallada, visita nuestras páginas en inglés.</span>
+      <a href="index.html">View in English →</a>
+    </div>
+
+    <div class="section-label">El Paso, Texas</div>
+    <h1 style="margin-bottom: 1.2rem; max-width: 700px;">El Paso no es el cliente de Flock.<br>Los residentes de El Paso somos el producto.</h1>
+
+    <div class="es-body">
+
+      <p>En este momento, hay <strong>150 cámaras de Flock Safety</strong> operando en las calles de El Paso. Estas cámaras fotografían cada vehículo que pasa — el tuyo, el de tu familia, el de tus vecinos — las 24 horas del día. Esa información se sube a una base de datos privada controlada por una empresa en Georgia, accesible a cientos de agencias policiales en todo el país.</p>
+
+      <p>El contrato entre la Ciudad de El Paso y Flock Safety <strong>vence el 16 de mayo de 2026</strong>. El Concejo Municipal de El Paso tiene que decidir si lo renueva. Esa es la razón por la que existe este sitio.</p>
+
+      <p>Pedimos que el contrato <strong>no se renueve</strong>.</p>
+
+      <!-- Stats -->
+      <div class="stats-es">
+        <div class="stat-es">
+          <div class="num">150+</div>
+          <div class="desc">Cámaras Flock en El Paso</div>
+        </div>
+        <div class="stat-es">
+          <div class="num">16 mayo</div>
+          <div class="desc">Fecha de vencimiento del contrato</div>
+        </div>
+        <div class="stat-es">
+          <div class="num">6–2</div>
+          <div class="desc">Votación del concejo el 3 de marzo</div>
+        </div>
+        <div class="stat-es">
+          <div class="num">$7.5B</div>
+          <div class="desc">Valor de Flock Safety</div>
+        </div>
+      </div>
+
+      <!-- What are these cameras -->
+      <h2>¿Qué son estas cámaras?</h2>
+
+      <p>Puede que las hayas visto sin saber qué eran — pequeñas, negras, con panel solar, instaladas en postes a lo largo de las calles. No son cámaras de tráfico normales. Son cámaras de reconocimiento de placas automáticas, fabricadas por Flock Safety.</p>
+
+      <p>Cada vez que manejas cerca de una de estas cámaras, el sistema toma una foto de tu vehículo, lee tu placa, identifica el color y modelo de tu carro, y registra exactamente dónde estabas y a qué hora. Esa información se guarda hasta 30 días — o más si se relaciona con una investigación.</p>
+
+      <div class="es-callout">
+        <div class="callout-label">Piénsalo así</div>
+        <p>Si manejas regularmente por El Paso, Flock sabe a qué iglesia vas, a qué escuela llevas a tus hijos, a qué doctor vas, dónde estacionas en la noche, y a qué hora sales en la mañana. Todo eso está en una base de datos privada — no controlada por El Paso, sino por una empresa en Georgia valuada en $7,500,000,000 de dólares.</p>
+      </div>
+
+      <!-- Key facts -->
+      <h2>Lo que necesitas saber</h2>
+
+      <div class="es-facts">
+        <div class="es-fact">
+          <div class="es-fact-num">01 / Seguridad</div>
+          <h3>Las cámaras tienen fallas de seguridad graves y permanentes</h3>
+          <p>Las cámaras de Flock usan Android 8.1 — un sistema operativo que Google dejó de actualizar en 2021. Eso significa que tiene vulnerabilidades conocidas que nunca van a ser corregidas. Investigadores de ciberseguridad demostraron que cualquier persona con acceso físico a una cámara puede hackearla en menos de 30 segundos. El gobierno federal ha registrado 22 fallas de seguridad confirmadas en los dispositivos de Flock.</p>
+        </div>
+        <div class="es-fact">
+          <div class="es-fact-num">02 / Acceso Federal</div>
+          <h3>Agencias federales como ICE pueden acceder a estos datos</h3>
+          <p>El EPPD dice que no comparte datos con ICE. Pero en otras ciudades, agencias federales tuvieron acceso a datos de Flock durante meses sin que la policía local lo supiera. Además, el propio documento de privacidad del gobierno federal (DHS/ICE/PIA-039) establece que los registros de auditoría van a ICE — no a la policía local. El EPPD no puede verificar de forma independiente quién ha buscado datos de El Paso.</p>
+          <p>El Paso es una ciudad fronteriza con una comunidad mayoritariamente hispana. La diferencia entre una promesa verbal y una garantía escrita en el contrato importa enormemente.</p>
+        </div>
+        <div class="es-fact">
+          <div class="es-fact-num">03 / El Contrato</div>
+          <h3>Flock cambió su contrato — y eliminó la protección más importante</h3>
+          <p>En febrero de 2026, Flock reescribió sus Términos de Servicio con 147 cambios. El más importante: eliminaron la cláusula que decía que no venderían los datos de sus clientes. Cualquier renovación del contrato de El Paso se firmaría bajo estos nuevos términos.</p>
+        </div>
+        <div class="es-fact">
+          <div class="es-fact-num">04 / Texas</div>
+          <h3>Texas no tiene ley que nos proteja</h3>
+          <p>A diferencia de otros estados, Texas no tiene ninguna ley que regule cómo se deben manejar los datos de los lectores de placas — quién puede accederlos, cuánto tiempo se guardan, o cuándo se pueden compartir con agencias federales. Varios proyectos de ley han sido presentados en Austin. Todos murieron en comité. La única protección que tienen los residentes de El Paso está en el contrato mismo — el contrato que Flock acaba de reescribir.</p>
+        </div>
+        <div class="es-fact">
+          <div class="es-fact-num">05 / El Negocio</div>
+          <h3>El precio barato es la señal de alerta</h3>
+          <p>El Paso pagó menos de $5,000 por cámara al año para fotografiar cada vehículo en la ciudad las 24 horas. Flock Safety está valuada en $7,500,000,000 de dólares. Ese precio solo tiene sentido si tus datos valen mucho más que el hardware. No eres el cliente de Flock. Eres el producto.</p>
+        </div>
+      </div>
+
+      <!-- What happened March 3 -->
+      <h2>Lo que pasó el 3 de marzo</h2>
+
+      <p>El 3 de marzo de 2026, el Concejo Municipal de El Paso votó 6 a 2 en contra de una propuesta que hubiera permitido que el contrato expirara sin renovarse. Los representantes Chris Canales y Lily Limón votaron a favor de dejar vencer el contrato.</p>
+
+      <p>Pero esa votación <strong>no renovó el contrato</strong>. Solo rechazó la propuesta de cancelarlo anticipadamente. El contrato sigue venciendo el 16 de mayo. La decisión aún no se ha tomado.</p>
+
+      <div class="es-callout">
+        <div class="callout-label">La representante Lily Limón — 3 de marzo de 2026</div>
+        <p>"Si realmente lees el contrato de Flock, los datos no se compartirán a menos que lo exija la ley. ¿Podemos estar de acuerdo en eso? Ahí es donde se puede abrir la puerta trasera."</p>
+      </div>
+
+      <!-- Take Action -->
+      <h2>Qué puedes hacer ahora</h2>
+
+      <p>Lo más importante que puedes hacer es comunicarte con tu representante del concejo municipal antes del 16 de mayo. Una llamada telefónica o un correo electrónico marca la diferencia — especialmente cuando muchas personas dicen lo mismo.</p>
+
+      <p>Si no sabes en qué distrito vives, puedes <a href="https://gis.elpasotexas.gov/districting/" target="_blank" rel="noopener">encontrarlo aquí</a>.</p>
+
+      <!-- Call script Spanish -->
+      <div class="section-label" style="margin-top: 2rem;">Guión para llamar por teléfono</div>
+
+      <div class="script-es">
+        <div class="script-es-header">
+          <span>Guión — llamada telefónica (2 minutos)</span>
+          <button class="copy-btn" onclick="copyScript('call-es', this)">Copiar</button>
+        </div>
+        <div class="script-es-body" id="call-es">"Hola, me llamo [TU NOMBRE] y soy residente de El Paso, Distrito [TU DISTRITO].
+
+Le llamo por el contrato con Flock Safety que vence el 16 de mayo.
+
+Quiero que [NOMBRE DEL REPRESENTANTE] sepa que me opongo a la renovación de este contrato. Las cámaras de Flock tienen fallas de seguridad graves y documentadas. La empresa eliminó las protecciones de datos de su contrato en febrero. Y en otras ciudades, agencias federales accedieron a estos datos sin que la policía local lo supiera.
+
+El Paso pagó menos de $5,000 por cámara al año para fotografiar cada vehículo de la ciudad. Flock Safety está valuada en $7,500 millones de dólares. Los residentes de El Paso no somos los clientes de Flock — somos el producto.
+
+Le pido a [NOMBRE DEL REPRESENTANTE] que vote en contra de renovar este contrato.
+
+¿Puedo contar con [NOMBRE DEL REPRESENTANTE] para oponerse a esta renovación?
+
+Gracias."</div>
+        <div class="script-es-note">Reemplaza [TU NOMBRE], [TU DISTRITO] y [NOMBRE DEL REPRESENTANTE] antes de llamar.</div>
+      </div>
+
+      <!-- Email script Spanish -->
+      <div class="section-label" style="margin-top: 2rem;">Guión para correo electrónico</div>
+
+      <div class="script-es">
+        <div class="script-es-header">
+          <span>Correo — asunto</span>
+          <button class="copy-btn" onclick="copyScript('email-es-subject', this)">Copiar</button>
+        </div>
+        <div class="script-es-body" id="email-es-subject">Por favor vote NO a la renovación del contrato con Flock Safety — vence el 16 de mayo</div>
+      </div>
+
+      <div class="script-es">
+        <div class="script-es-header">
+          <span>Correo — cuerpo del mensaje</span>
+          <button class="copy-btn" onclick="copyScript('email-es-body', this)">Copiar</button>
+        </div>
+        <div class="script-es-body" id="email-es-body">Estimado/a [NOMBRE DEL REPRESENTANTE]:
+
+Me llamo [TU NOMBRE] y soy residente de El Paso, Distrito [TU DISTRITO].
+
+Le escribo para pedirle que se oponga a la renovación del contrato de la Ciudad con Flock Safety, que vence el 16 de mayo de 2026.
+
+Mis preocupaciones son claras:
+
+Las cámaras de Flock usan Android 8.1, un sistema operativo descontinuado en 2021 que nunca recibirá otra actualización de seguridad. El gobierno federal ha registrado 22 vulnerabilidades confirmadas. Cualquier persona puede hackear físicamente estas cámaras en menos de 30 segundos.
+
+En febrero de 2026, Flock reescribió sus Términos de Servicio con 147 cambios — incluyendo la eliminación de la cláusula que decía que no venderían los datos de sus clientes.
+
+El portal de transparencia del EPPD lista una oficina de un comisionado del condado de Harris — no una agencia de seguridad — con acceso a los datos de las cámaras de El Paso. No se ha dado ninguna explicación pública.
+
+El Paso pagó menos de $5,000 por cámara al año para fotografiar cada vehículo de la ciudad las 24 horas. Flock Safety está valuada en $7,500 millones. Los residentes de El Paso no somos los clientes de Flock — somos el producto.
+
+Más de 30 ciudades en todo el país ya han cancelado sus contratos con Flock. El Paso debe hacer lo mismo.
+
+Le pido que vote en contra de renovar este contrato y que apoye alternativas gobernadas localmente que mantengan los datos de El Paso bajo control de El Paso.
+
+Respetuosamente,
+[TU NOMBRE]
+[TU DIRECCIÓN / COLONIA]</div>
+        <div class="script-es-note">Reemplaza todos los campos entre corchetes antes de enviar.</div>
+      </div>
+
+      <!-- Council list -->
+      <h2>Contacta a tu representante</h2>
+      <p style="color: rgba(244,241,235,0.7); font-size: 0.92rem; margin-bottom: 1rem;">¿No sabes en qué distrito vives? <a href="https://gis.elpasotexas.gov/districting/" target="_blank" rel="noopener">Encuéntralo aquí →</a></p>
+
+      <div class="council-es">
+        <div class="council-es-item">
+          <div class="rep-info">
+            <div class="rep-name">Renard Johnson — Alcalde</div>
+            <div class="rep-district">Ciudad completa</div>
+          </div>
+          <div class="rep-links">
+            <a href="tel:9152120000">☎ (915) 212-0000</a>
+            <a href="mailto:mayor@elpasotexas.gov">✉ mayor@elpasotexas.gov</a>
+          </div>
+        </div>
+        <div class="council-es-item">
+          <div class="rep-info">
+            <div class="rep-name">Alejandra Chávez</div>
+            <div class="rep-district">Distrito 1 — Noroeste</div>
+          </div>
+          <div class="rep-links">
+            <a href="tel:9152120001">☎ (915) 212-0001</a>
+            <a href="mailto:district1@elpasotexas.gov">✉ district1@elpasotexas.gov</a>
+          </div>
+        </div>
+        <div class="council-es-item">
+          <div class="rep-info">
+            <div class="rep-name">Dr. Josh Acevedo</div>
+            <div class="rep-district">Distrito 2 — Noreste</div>
+          </div>
+          <div class="rep-links">
+            <a href="tel:9152120002">☎ (915) 212-0002</a>
+            <a href="mailto:district2@elpasotexas.gov">✉ district2@elpasotexas.gov</a>
+          </div>
+        </div>
+        <div class="council-es-item">
+          <div class="rep-info">
+            <div class="rep-name">Deanna Maldonado-Rocha</div>
+            <div class="rep-district">Distrito 3 — Este</div>
+          </div>
+          <div class="rep-links">
+            <a href="tel:9152120003">☎ (915) 212-0003</a>
+            <a href="mailto:district3@elpasotexas.gov">✉ district3@elpasotexas.gov</a>
+          </div>
+        </div>
+        <div class="council-es-item">
+          <div class="rep-info">
+            <div class="rep-name">Cynthia Boyar Trejo</div>
+            <div class="rep-district">Distrito 4 — Valle Bajo</div>
+          </div>
+          <div class="rep-links">
+            <a href="tel:9152120004">☎ (915) 212-0004</a>
+            <a href="mailto:district4@elpasotexas.gov">✉ district4@elpasotexas.gov</a>
+          </div>
+        </div>
+        <div class="council-es-item">
+          <div class="rep-info">
+            <div class="rep-name">Ivan Niño</div>
+            <div class="rep-district">Distrito 5 — Valle Alto</div>
+          </div>
+          <div class="rep-links">
+            <a href="tel:9152120005">☎ (915) 212-0005</a>
+            <a href="mailto:district5@elpasotexas.gov">✉ district5@elpasotexas.gov</a>
+          </div>
+        </div>
+        <div class="council-es-item">
+          <div class="rep-info">
+            <div class="rep-name">Art Fierro</div>
+            <div class="rep-district">Distrito 6 — Centro / Oeste</div>
+          </div>
+          <div class="rep-links">
+            <a href="tel:9152120006">☎ (915) 212-0006</a>
+            <a href="mailto:district6@elpasotexas.gov">✉ district6@elpasotexas.gov</a>
+          </div>
+        </div>
+        <div class="council-es-item ally">
+          <div class="rep-info">
+            <div class="rep-name">Lily Limón</div>
+            <div class="rep-district">Distrito 7 — Valle de la Misión</div>
+            <div class="ally-badge">✓ Votó para dejar vencer el contrato</div>
+          </div>
+          <div class="rep-links">
+            <a href="tel:9152120007">☎ (915) 212-0007</a>
+            <a href="mailto:district7@elpasotexas.gov">✉ district7@elpasotexas.gov</a>
+          </div>
+        </div>
+        <div class="council-es-item ally">
+          <div class="rep-info">
+            <div class="rep-name">Chris Canales</div>
+            <div class="rep-district">Distrito 8 — Noreste / Fort Bliss</div>
+            <div class="ally-badge">✓ Votó para dejar vencer el contrato</div>
+          </div>
+          <div class="rep-links">
+            <a href="tel:9152120008">☎ (915) 212-0008</a>
+            <a href="mailto:district8@elpasotexas.gov">✉ district8@elpasotexas.gov</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Public comment -->
+      <h2>Habla en la reunión del Concejo Municipal</h2>
+
+      <p>El Concejo Municipal de El Paso se reúne la mayoría de los martes por la mañana en el Ayuntamiento, 300 N. Campbell. Cualquier residente puede hablar durante los comentarios públicos — no necesitas invitación ni conocer todos los detalles. Tienes 3 minutos.</p>
+
+      <p><strong>Para registrarte:</strong> Llama a la Secretaría Municipal al (915) 212-0049 antes de las 9am el día de la reunión. Si necesitas interpretación en español, envía un correo a <a href="mailto:cityclerk@elpasotexas.gov">cityclerk@elpasotexas.gov</a> antes del mediodía del viernes anterior — el servicio es gratuito.</p>
+
+      <!-- CTA -->
+      <div style="margin-top: 3rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+        <a href="action.html" class="btn btn-primary">Toma acción →</a>
+        <a href="facts.html" class="btn btn-outline">Ver los hechos (inglés) →</a>
+      </div>
+
+      <p style="margin-top: 2rem; font-size: 0.85rem; color: var(--gray);">Este sitio no contiene asesoría legal. Todo lo que afirmamos está respaldado por documentos públicos, registros gubernamentales o reportajes de investigación con fuentes identificadas. DeFlock El Paso es una organización comunitaria independiente, no afiliada a ningún partido político ni agencia gubernamental.</p>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">DEFLOCK EL PASO — deflockelpaso.org</div>
+    <ul class="footer-links">
+      <li><a href="problem.html">El Problema</a></li>
+      <li><a href="facts.html">Los Hechos</a></li>
+      <li><a href="action.html">Toma Acción</a></li>
+      <li><a href="blog/index.html">Noticias</a></li>
+      <li><a href="resources.html">Recursos</a></li>
+      <li><a href="about.html">Quiénes Somos</a></li>
+      <li><a href="index.html">English</a></li>
+      <li><a href="mailto:contact@deflockelpaso.org">contact@deflockelpaso.org</a></li>
+    </ul>
+    <div class="footer-copy">© 2026 DeFlock El Paso. Contenido disponible bajo CC BY-SA 4.0. No afiliado a ninguna otra organización. Este sitio no contiene asesoría legal.</div>
+  </div>
+</footer>
+
+<script>
+function copyScript(id, btn) {
+  var text = document.getElementById(id).innerText;
+  navigator.clipboard.writeText(text).then(function() {
+    btn.textContent = 'Copiado!';
+    btn.classList.add('copied');
+    setTimeout(function() {
+      btn.textContent = 'Copiar';
+      btn.classList.remove('copied');
+    }, 2000);
+  });
+}
+var toggle = document.querySelector('.nav-toggle');
+if (toggle) {
+  toggle.addEventListener('click', function() {
+    this.classList.toggle('open');
+    document.getElementById('nav-links').classList.toggle('open');
+  });
+}
+</script>
+</body>
+</html>
