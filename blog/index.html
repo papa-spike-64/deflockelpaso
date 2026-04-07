@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News — DeFlock El Paso</title>
+  <meta name="description" content="News, updates, and editorial commentary on the Flock Safety contract in El Paso, Texas.">
+  <link rel="canonical" href="https://deflockelpaso.org/blog/">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .post-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      margin: 2rem 0;
+    }
+    .post-item {
+      background: var(--navy2);
+      padding: 1.8rem 2rem;
+      text-decoration: none;
+      display: block;
+      transition: background 0.15s;
+    }
+    .post-item:hover {
+      background: rgba(245,166,35,0.05);
+      text-decoration: none;
+    }
+    .post-date {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      color: var(--gray);
+      margin-bottom: 0.5rem;
+    }
+    .post-item h2 {
+      font-size: 1.15rem;
+      margin-bottom: 0.5rem;
+      color: var(--white);
+      line-height: 1.3;
+    }
+    .post-item p {
+      font-size: 0.9rem;
+      color: rgba(244,241,235,0.65);
+      margin: 0 0 0.8rem;
+      line-height: 1.6;
+    }
+    .post-tag {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 0.15rem 0.4rem;
+      border-radius: 2px;
+      background: rgba(245,166,35,0.1);
+      color: var(--amber);
+    }
+    .read-more {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--amber);
+      letter-spacing: 0.04em;
+    }
+  </style>
+</head>
+<body>
+
+<div class="urgency-bar">
+  ⚠ The El Paso Flock Safety contract expires <strong>May 16, 2026</strong>. &nbsp;<a href="../action.html">Take action →</a>
+</div>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="../index.html">DEFLOCK EL PASO</a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="this.classList.toggle('open'); document.getElementById('nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="../problem.html">The Problem</a></li>
+      <li><a href="../facts.html">Facts</a></li>
+      <li><a href="../action.html">Take Action</a></li>
+      <li><a href="../blog/index.html">News</a></li>
+      <li><a href="../resources.html">Resources</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a class="nav-lang" href="../es.html">ES</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section style="padding: 4rem 0 2rem;">
+  <div class="container">
+    <div class="section-label">News &amp; Commentary</div>
+    <h1 style="margin-bottom: 0.5rem;">What's happening</h1>
+    <p style="color: rgba(244,241,235,0.65); font-size: 0.95rem; margin-bottom: 2rem; font-family: var(--font-mono);">Editorial commentary and updates on the Flock Safety contract in El Paso. All opinions are those of DeFlock El Paso.</p>
+
+    <div class="post-list">
+
+      <a class="post-item" href="march-3-council-vote.html">
+        <div class="post-date">March 3, 2026 &nbsp;·&nbsp; <span class="post-tag">Council Vote</span></div>
+        <h2>Six council members voted against letting the contract expire. The contract still expires May 16.</h2>
+        <p>What happened at the March 3 City Council meeting, what was said, and why the vote doesn't end the fight — it starts it.</p>
+        <span class="read-more">Read more →</span>
+      </a>
+
+    </div>
+
+    <p style="font-size: 0.85rem; color: var(--gray); font-family: var(--font-mono); margin-top: 1.5rem;">More posts coming. The contract expires May 16. There is more to say.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">DEFLOCK EL PASO — deflockelpaso.org</div>
+    <ul class="footer-links">
+      <li><a href="../problem.html">The Problem</a></li>
+      <li><a href="../facts.html">Facts &amp; Evidence</a></li>
+      <li><a href="../action.html">Take Action</a></li>
+      <li><a href="../blog/index.html">News</a></li>
+      <li><a href="../resources.html">Resources</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../es.html">En Español</a></li>
+      <li><a href="mailto:contact@deflockelpaso.org">contact@deflockelpaso.org</a></li>
+    </ul>
+    <div class="footer-copy">© 2026 DeFlock El Paso. Content available under CC BY-SA 4.0. Not affiliated with any other organization. This site contains no legal advice.</div>
+  </div>
+</footer>
+
+<script>
+var toggle = document.querySelector('.nav-toggle');
+if (toggle) {
+  toggle.addEventListener('click', function() {
+    this.classList.toggle('open');
+    document.getElementById('nav-links').classList.toggle('open');
+  });
+}
+</script>
+</body>
+</html>
