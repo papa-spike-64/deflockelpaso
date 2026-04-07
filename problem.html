@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Problem — DeFlock El Paso</title>
+  <meta name="description" content="What are Flock Safety cameras, why does El Paso have 150 of them, and why does it matter? A plain-language explainer for El Paso residents.">
+  <link rel="canonical" href="https://deflockelpaso.org/problem.html">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .problem-body {
+      max-width: 740px;
+    }
+    .problem-body p {
+      font-size: 1.02rem;
+      line-height: 1.82;
+      color: rgba(244,241,235,0.82);
+      margin-bottom: 1.4rem;
+    }
+    .problem-body h2 {
+      margin: 3.5rem 0 1rem;
+      font-size: 1.65rem;
+    }
+    .problem-body h3 {
+      margin: 2rem 0 0.6rem;
+      font-size: 1.15rem;
+      color: var(--white);
+    }
+    .problem-body a { color: var(--amber); }
+    .problem-body strong { color: var(--white); }
+
+    .explainer-box {
+      background: var(--navy2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2rem;
+      margin: 2rem 0;
+    }
+    .explainer-box .explainer-label {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--amber);
+      margin-bottom: 0.8rem;
+    }
+    .explainer-box p {
+      font-size: 0.95rem;
+      color: rgba(244,241,235,0.78);
+      line-height: 1.75;
+      margin-bottom: 0.8rem;
+    }
+    .explainer-box p:last-child { margin-bottom: 0; }
+
+    .step-flow {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      margin: 2rem 0;
+    }
+    .step-item {
+      background: var(--navy2);
+      padding: 1.4rem 1.6rem 1.4rem 4.5rem;
+      position: relative;
+      font-size: 0.95rem;
+      color: rgba(244,241,235,0.8);
+      line-height: 1.65;
+    }
+    .step-item::before {
+      content: attr(data-step);
+      position: absolute;
+      left: 1.4rem;
+      top: 1.4rem;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--amber);
+    }
+    .step-item strong { color: var(--white); }
+
+    .callout {
+      border-left: 3px solid var(--amber);
+      background: rgba(245,166,35,0.05);
+      padding: 1.4rem 1.8rem;
+      border-radius: 0 var(--radius) var(--radius) 0;
+      margin: 2rem 0;
+    }
+    .callout .callout-label {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--amber);
+      margin-bottom: 0.6rem;
+    }
+    .callout p {
+      font-size: 0.95rem;
+      color: rgba(244,241,235,0.82);
+      margin: 0;
+      line-height: 1.75;
+    }
+
+    .warning-callout {
+      border-left: 3px solid var(--red);
+      background: rgba(217,79,61,0.06);
+      padding: 1.4rem 1.8rem;
+      border-radius: 0 var(--radius) var(--radius) 0;
+      margin: 2rem 0;
+    }
+    .warning-callout .callout-label {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #e07060;
+      margin-bottom: 0.6rem;
+    }
+    .warning-callout p {
+      font-size: 0.95rem;
+      color: rgba(244,241,235,0.82);
+      margin: 0;
+      line-height: 1.75;
+    }
+
+    .number-highlight {
+      font-family: var(--font-mono);
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 600;
+      color: var(--amber);
+      line-height: 1;
+      display: block;
+      margin-bottom: 0.3rem;
+    }
+    .number-context {
+      font-size: 0.88rem;
+      color: var(--gray);
+      font-family: var(--font-mono);
+      letter-spacing: 0.03em;
+    }
+    .numbers-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      margin: 2rem 0;
+    }
+    .number-item {
+      background: var(--navy2);
+      padding: 1.6rem;
+    }
+  </style>
+</head>
+<body>
+
+<div class="urgency-bar">
+  ⚠ The El Paso Flock Safety contract expires <strong>May 16, 2026</strong>. &nbsp;<a href="action.html">Take action →</a>
+</div>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">DEFLOCK EL PASO</a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="this.classList.toggle('open'); document.getElementById('nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="problem.html">The Problem</a></li>
+      <li><a href="facts.html">Facts</a></li>
+      <li><a href="action.html">Take Action</a></li>
+      <li><a href="blog/index.html">News</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a class="nav-lang" href="es.html">ES</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section style="padding: 4rem 0 2rem;">
+  <div class="container">
+    <div class="section-label">The Problem</div>
+    <h1 style="margin-bottom: 2rem; max-width: 700px;">What are these cameras, and why should you care?</h1>
+
+    <div class="problem-body">
+
+      <!-- Part 1: What is Flock -->
+      <div class="section-label">Part 1</div>
+      <h2 style="margin-top: 0.5rem;">What is a Flock Safety camera?</h2>
+
+      <p>You've probably seen them without knowing what they were. Small, black, solar-powered cameras mounted on poles along roads and intersections. They look like traffic cameras. They are not traffic cameras.</p>
+
+      <p>They are made by a company called Flock Safety, based in Atlanta, Georgia. And unlike a red light camera — which only captures an image when you run a red light — a Flock camera photographs <strong>every single vehicle</strong> that drives past it. Every car. Every truck. Every time. Around the clock.</p>
+
+      <div class="explainer-box">
+        <div class="explainer-label">Here's exactly what happens when you drive past a Flock camera</div>
+        <div class="step-flow" style="margin: 0;">
+          <div class="step-item" data-step="1"><strong>The camera takes a photo</strong> of the rear of your vehicle as you pass — capturing your license plate, the make, model, and color of your car, and any distinguishing features like bumper stickers, dents, or a roof rack.</div>
+          <div class="step-item" data-step="2"><strong>AI software analyzes the image</strong> instantly — reading your plate, identifying your vehicle type, and logging everything with the exact time, date, and location.</div>
+          <div class="step-item" data-step="3"><strong>The data is uploaded</strong> to Flock Safety's servers in the cloud — not stored locally in El Paso, but on a private company's servers in Georgia.</div>
+          <div class="step-item" data-step="4"><strong>Your trip is added to a searchable database</strong> — one that police officers anywhere in Flock's network can search. Not just El Paso PD. Hundreds of agencies across the country.</div>
+          <div class="step-item" data-step="5"><strong>The data is kept for up to 30 days</strong> — or longer if flagged for an investigation. Every trip. Every location. Every time.</div>
+        </div>
+      </div>
+
+      <p>This happens whether or not you have done anything wrong. Whether or not you are under suspicion. Whether or not you even know the camera exists. If you drive in El Paso, you are in this database.</p>
+
+      <!-- Part 2: El Paso's cameras -->
+      <div class="section-label">Part 2</div>
+      <h2>El Paso has 150 of these cameras</h2>
+
+      <p>As of 2025, the El Paso Police Department operates 150 Flock Safety cameras across the city. They were installed using a $702,500 state grant from the Motor Vehicle Crime Prevention Authority — which means El Paso taxpayers did not pay for them directly. The grant also means there was no major budget debate, no council vote on the cameras themselves, and very little public discussion about whether this was a good idea.</p>
+
+      <p>Most El Paso residents had no idea these cameras existed until late 2025 — when questions started appearing on Reddit and local news outlets began reporting on them. At a City Council meeting in March 2026, a council member shared that one of their own constituents had texted them a photo of one of the cameras asking "what is this?" The council member's answer: they didn't know either.</p>
+
+      <div class="numbers-row">
+        <div class="number-item">
+          <span class="number-highlight">150</span>
+          <span class="number-context">Flock cameras in El Paso</span>
+        </div>
+        <div class="number-item">
+          <span class="number-highlight">$4,683</span>
+          <span class="number-context">Cost per camera per year</span>
+        </div>
+        <div class="number-item">
+          <span class="number-highlight">$7.5B</span>
+          <span class="number-context">Flock Safety's valuation</span>
+        </div>
+        <div class="number-item">
+          <span class="number-highlight">May 16</span>
+          <span class="number-context">Contract expiration date</span>
+        </div>
+      </div>
+
+      <p>The contract with Flock Safety expires on May 16, 2026. The city has to decide whether to renew it. That decision is the reason this site exists.</p>
+
+      <!-- Part 3: Why it matters -->
+      <div class="section-label">Part 3</div>
+      <h2>Why this is different from a normal security camera</h2>
+
+      <p>You might be thinking: cameras are everywhere. Banks have them. Parking lots have them. Businesses have them. What makes Flock different?</p>
+
+      <p>Three things.</p>
+
+      <h3>1. Flock cameras are connected to a national network</h3>
+
+      <p>When El Paso PD searches Flock's database, they are not just searching El Paso's 150 cameras. They can search cameras from hundreds of other agencies across the country — and those agencies can search El Paso's cameras. Your trip to the grocery store in El Paso could show up in a search run by a police department in another state. This is not hypothetical. It is how the system is designed to work.</p>
+
+      <div class="callout">
+        <div class="callout-label">Think about what that means</div>
+        <p>If you drive regularly in El Paso, the Flock network has a record of where you go to church, where your kids go to school, which doctor's office you visit, where you park at night, and what time you leave in the morning. That information is sitting in a private company's database, accessible to hundreds of law enforcement agencies — including, in documented cases in other cities, federal immigration agencies.</p>
+      </div>
+
+      <h3>2. The data is controlled by a private company, not by El Paso</h3>
+
+      <p>The cameras are physically in El Paso. But the data flows to Flock Safety's servers, operated by a private company in Georgia. El Paso does not fully control who accesses that data, under what circumstances, or for how long it is kept. The protections El Paso residents have depend almost entirely on the contract — and the vendor's willingness to honor it.</p>
+
+      <p>In February 2026, Flock rewrote its Terms of Service with 147 changes — including deleting the clause that previously said they would not sell customer data. Any renewal of El Paso's contract would be signed under these new terms.</p>
+
+      <h3>3. Texas has no law protecting you</h3>
+
+      <p>Some states have passed laws governing how license plate reader data must be handled — who can access it, how long it can be kept, and when it can be shared with federal agencies. Texas is not one of them. Multiple bills have been introduced in Austin to create these protections. All of them died in committee.</p>
+
+      <p>This means El Paso residents have no state-level legal backstop. If Flock or El Paso PD misuses the data, there is no Texas law that was broken. The only protection is the contract — which Flock just rewrote.</p>
+
+      <!-- Part 4: The security problem -->
+      <div class="section-label">Part 4</div>
+      <h2>The cameras themselves are not secure</h2>
+
+      <p>Even if you trusted Flock Safety completely — even if you believed every assurance they have made — there is a separate problem. The cameras are not secure.</p>
+
+      <p>Flock cameras run on Android 8.1 — a version of the Android operating system that Google discontinued in 2021. That means it has not received a security update in years, and it never will again. Every known vulnerability in that operating system is a permanent hole that cannot be patched.</p>
+
+      <div class="warning-callout">
+        <div class="callout-label">What security researchers found</div>
+        <p>Independent cybersecurity researchers demonstrated that a Flock camera can be physically accessed — by anyone who can reach it — in under 30 seconds using a specific button sequence on the back of the device. No special tools. No hacking expertise. Just someone who knows the sequence, which has now been publicly documented. Most Flock cameras are mounted on public utility poles at street level. Anyone can reach them.</p>
+      </div>
+
+      <p>The U.S. government's own cybersecurity database — the National Vulnerability Database — lists 22 confirmed security flaws in Flock Safety hardware. Police officer login credentials for Flock's system have been found for sale on dark web markets. At one point, Flock's admin dashboards were publicly accessible without any password at all.</p>
+
+      <p>This is the system that holds a record of where every El Paso vehicle has been for the past 30 days.</p>
+
+      <!-- Part 5: The federal access problem -->
+      <div class="section-label">Part 5</div>
+      <h2>Federal agencies can access local Flock data</h2>
+
+      <p>El Paso PD has stated that it does not share its Flock data with federal immigration agencies. We are not saying they are lying. We are saying that their assurance cannot be independently verified — and that in other cities, the same assurance turned out to be wrong.</p>
+
+      <p>In documented cases across the country, federal agencies accessed local Flock data without the local police department's knowledge. Flock enabled the access — the local department found out afterward. ICE agents have also asked local officers to run Flock searches on their behalf, leaving the local officer's name on the log while the federal agency gets the results.</p>
+
+      <div class="callout">
+        <div class="callout-label">The audit log problem</div>
+        <p>ICE's own Privacy Impact Assessment — a federal government document — requires vendors to provide audit logs of all ALPR queries to ICE. Those logs go to ICE. They are not required to be shared with the local police department whose cameras were searched. This means El Paso PD cannot independently verify who has accessed El Paso's data. When they say "ICE doesn't have access," they are taking the vendor's word for it — not reading an audit log they can see themselves.</p>
+      </div>
+
+      <p>For El Paso — a majority-Hispanic border city with a large immigrant community — the gap between a verbal assurance and a written, enforceable guarantee is not a small thing. It is the difference between safety and exposure.</p>
+
+      <!-- Part 6: What we want -->
+      <div class="section-label">Part 6</div>
+      <h2>What we are asking for</h2>
+
+      <p>We are asking El Paso City Council to cancel the Flock Safety contract on May 16 and not renew it. We believe the documented security failures, the lack of transparency, the unanswered questions about federal access, and the fundamental problems with Flock's business model make this vendor unfit to continue operating in El Paso.</p>
+
+      <p>We are not asking for El Paso PD to lose effective tools. If the city wants license plate reader technology, we support evaluating locally governed alternatives — tools owned and controlled by El Paso, under an El Paso ordinance, auditable by El Paso elected officials. Public safety technology should serve the public, not a private data network valued at $7.5 billion.</p>
+
+      <p>The contract expires May 16. That is the decision point. If you agree that El Paso deserves better than this, there are concrete things you can do right now.</p>
+
+      <div style="margin-top: 2.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+        <a href="action.html" class="btn btn-primary">Contact Your Council Member →</a>
+        <a href="facts.html" class="btn btn-outline">See the Full Facts →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">DEFLOCK EL PASO — deflockelpaso.org</div>
+    <ul class="footer-links">
+      <li><a href="problem.html">The Problem</a></li>
+      <li><a href="facts.html">Facts &amp; Evidence</a></li>
+      <li><a href="action.html">Take Action</a></li>
+      <li><a href="blog/index.html">News</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="es.html">En Español</a></li>
+      <li><a href="mailto:contact@deflockelpaso.org">contact@deflockelpaso.org</a></li>
+    </ul>
+    <div class="footer-copy">© 2026 DeFlock El Paso. Content available under CC BY-SA 4.0. Not affiliated with any other organization. This site contains no legal advice.</div>
+  </div>
+</footer>
+
+<script>
+var toggle = document.querySelector('.nav-toggle');
+if (toggle) {
+  toggle.addEventListener('click', function() {
+    this.classList.toggle('open');
+    document.getElementById('nav-links').classList.toggle('open');
+  });
+}
+</script>
+
+</body>
+</html>
